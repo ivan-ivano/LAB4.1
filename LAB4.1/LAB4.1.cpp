@@ -17,10 +17,10 @@ int main()
 	k = N;
 	i = 0;
 
-	while ( i <= 19)
+	while ( k <= 19)
 	{
 		P *= (k * 1.0 - N) / (k * 1.0 + N) + 1;
-		i++;
+		k++;
 	}
 	cout << P << endl;
 
@@ -30,14 +30,14 @@ int main()
 
 	do {
 		P *= (k * 1.0 - N) / (k * 1.0 + N) + 1;
-		i++;
-	} while (i <= 19);
+		k++;
+	} while (k <= 19);
 
 	cout << P << endl;
 
 	P = 1;
 
-	for (i = 0; i <= 19; i++)
+	for (k = N; k <= 19; k++)
 	{
 		P *= (k * 1.0 - N) / (k * 1.0 + N) + 1;
 	}
@@ -46,7 +46,7 @@ int main()
 	
 	P = 1;
 
-	for (i = 19; i >= 19; i--)
+	for (k = 19; k >= N; k--)
 	{
 		P *= (k * 1.0 - N) / (k * 1.0 + N) + 1;
 	}
