@@ -11,7 +11,6 @@ int main()
 {
 	int k, N, i;
 	double P;
-	cout << "k = "; cin >> k;
 	cout << "N = "; cin >> N;
 	P = 1;
 	k = N;
